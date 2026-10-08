@@ -1,0 +1,20 @@
+.clock { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 10px; }
+.digit {
+  flex: 1;
+  max-width: 150px;
+  aspect-ratio: 1 / 1;
+  background: #0d0d0d;
+  border: 1px solid var(--line);
+  border-bottom: 3px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(32px, 16vw, 72px);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.colon { font-size: clamp(24px, 10vw, 48px); color: var(--accent); animation: blink 1s steps(1) infinite; }
+.meta { display: flex; justify-content: space-between; margin-top: 12px; font-size: 12px; letter-spacing: 2px; color: var(--muted); text-transform: uppercase; }
+.meta b { color: var(--text); }
+.bar { height: 2px; background: var(--line); margin-top: 8px; }
+.bar span { display: block; height: 100%; width: 0; background: var(--accent); transition: width 0.5s linear; }

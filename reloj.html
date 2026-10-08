@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Reloj</title>
+<link rel="stylesheet" href="widget.css">
+<link rel="stylesheet" href="reloj.css">
+<script src="theme.js"></script>
+</head>
+<body>
+<div class="card">
+  <div class="rec"><i></i>REC</div>
+  <div class="clock">
+    <div class="digit" id="hh">00</div>
+    <div class="colon">:</div>
+    <div class="digit" id="mm">00</div>
+  </div>
+  <div class="meta"><b id="day">—</b><span id="date">—</span></div>
+  <div class="bar"><span id="progress"></span></div>
+</div>
+<script src="reloj.js"></script>
+</body>
+</html>

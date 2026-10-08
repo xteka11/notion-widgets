@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Mini calendario</title>
+<link rel="stylesheet" href="widget.css">
+<link rel="stylesheet" href="calendario.css">
+<script src="theme.js"></script>
+</head>
+<body>
+<div class="card">
+  <div class="rec"><i></i>REC</div>
+  <div class="head">
+    <button id="prev" aria-label="Mes anterior">‹</button>
+    <h1 id="title">—</h1>
+    <button id="next" aria-label="Mes siguiente">›</button>
+  </div>
+  <div class="grid" id="grid"></div>
+</div>
+<script src="calendario.js"></script>
+</body>
+</html>

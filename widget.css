@@ -1,0 +1,77 @@
+/* Tema por defecto: rojo burdeos. ?t=morado cambia a morado. */
+:root {
+  --bg: #191919;
+  --card: #141414;
+  --text: #e6e6e6;
+  --muted: #8a8a8a;
+  --line: #2a2a2a;
+  --accent: #a3262d;
+  --accent-soft: #7a1f24;
+}
+:root[data-theme="morado"] {
+  --accent: #8e4fc4;
+  --accent-soft: #4f2a73;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Courier New", ui-monospace, monospace;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 420px;
+  background: var(--card);
+  border: 1px dashed var(--accent-soft);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Scanlines VHS */
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 0 1px, transparent 1px 3px);
+}
+
+.rec {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rec i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: blink 1.2s steps(1) infinite;
+}
+
+@keyframes blink { 50% { opacity: 0; } }
