@@ -18,3 +18,13 @@
 .meta b { color: var(--text); }
 .bar { height: 2px; background: var(--line); margin-top: 8px; }
 .bar span { display: block; height: 100%; width: 0; background: var(--accent); transition: width 0.5s linear; }
+
+:root[data-theme="comic"] .digit {
+  background: var(--accent-soft);
+  color: #fff;
+  border: 3px solid #111;
+  box-shadow: 4px 4px 0 #111;
+  text-shadow: 3px 3px 0 #111;
+}
+:root[data-theme="comic"] .colon { color: #111; }
+:root[data-theme="comic"] .bar { height: 8px; border: 2px solid #111; background: #fff; }

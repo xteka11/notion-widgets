@@ -75,3 +75,30 @@ body {
 }
 
 @keyframes blink { 50% { opacity: 0; } }
+
+/* Tema cómic (estilo pfp): colores planos, contorno negro grueso, sombra dura, trama de puntos */
+:root[data-theme="comic"] {
+  --bg: #191919;
+  --card: #f4e4c1;
+  --text: #111;
+  --muted: #5a4a32;
+  --line: #111;
+  --accent: #f26b1d;
+  --accent-soft: #2b5fa8;
+}
+:root[data-theme="comic"] body { font-family: "Arial Black", Impact, "Helvetica Neue", sans-serif; }
+:root[data-theme="comic"] .card {
+  border: 3px solid #111;
+  box-shadow: 6px 6px 0 #111;
+  background-image: radial-gradient(rgba(17, 17, 17, 0.12) 1px, transparent 1.4px);
+  background-size: 8px 8px;
+  margin: 0 6px 6px 0;
+}
+:root[data-theme="comic"] .card::after { display: none; }
+:root[data-theme="comic"] .rec { color: #111; }
+:root[data-theme="comic"] .rec i {
+  border-radius: 0;
+  width: 10px;
+  height: 10px;
+  clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
