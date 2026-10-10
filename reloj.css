@@ -28,3 +28,12 @@
 }
 :root[data-theme="comic"] .colon { color: #111; }
 :root[data-theme="comic"] .bar { height: 8px; border: 2px solid #111; background: #fff; }
+
+:root[data-theme="noche"] .digit {
+  background: var(--accent-soft);
+  color: #fff;
+  border: 3px solid #000;
+  box-shadow: 4px 4px 0 #000;
+  text-shadow: 3px 3px 0 #000;
+}
+:root[data-theme="noche"] .bar { height: 8px; border: 2px solid #000; background: #241838; }

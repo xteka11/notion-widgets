@@ -102,3 +102,29 @@ body {
   height: 10px;
   clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
+
+/* Tema noche (versión final): estructura cómic sobre oscuro morado */
+:root[data-theme="noche"] {
+  --bg: #191919;
+  --card: #15101f;
+  --text: #ece6ff;
+  --muted: #9d8cc4;
+  --line: #000;
+  --accent: #b06cff;
+  --accent-soft: #3a1f63;
+}
+:root[data-theme="noche"] body { font-family: "Arial Black", Impact, "Helvetica Neue", sans-serif; }
+:root[data-theme="noche"] .card {
+  border: 3px solid #000;
+  box-shadow: 6px 6px 0 var(--accent);
+  background-image: radial-gradient(rgba(176, 108, 255, 0.10) 1px, transparent 1.4px);
+  background-size: 8px 8px;
+  margin: 0 6px 6px 0;
+}
+:root[data-theme="noche"] .card::after { display: none; }
+:root[data-theme="noche"] .rec i {
+  border-radius: 0;
+  width: 10px;
+  height: 10px;
+  clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
