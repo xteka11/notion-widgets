@@ -103,26 +103,17 @@ body {
   clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
 
-/* Tema noche (versión final): contorno grueso y sombra dura, negro y rojo, sin trama */
+/* Tema noche (versión final): limpio, sin marco, se funde con Notion oscuro; acento rojo */
 :root[data-theme="noche"] {
   --bg: #191919;
-  --card: #120d0d;
-  --text: #f2ecea;
-  --muted: #b08a86;
-  --line: #000;
-  --accent: #d0202a;
-  --accent-soft: #5c0d12;
+  --card: #191919;
+  --text: #f1eeee;
+  --muted: #8e8686;
+  --line: #2e2a2a;
+  --accent: #e0303a;
+  --accent-soft: #3a1416;
 }
-:root[data-theme="noche"] body { font-family: "Arial Black", Impact, "Helvetica Neue", sans-serif; }
-:root[data-theme="noche"] .card {
-  border: 3px solid #000;
-  box-shadow: 6px 6px 0 var(--accent);
-  margin: 0 6px 6px 0;
-}
+:root[data-theme="noche"] body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+:root[data-theme="noche"] .card { border: 0; max-width: 460px; padding: 10px 6px; }
 :root[data-theme="noche"] .card::after { display: none; }
-:root[data-theme="noche"] .rec i {
-  border-radius: 0;
-  width: 10px;
-  height: 10px;
-  clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-}
+:root[data-theme="noche"] .rec { display: none; }
